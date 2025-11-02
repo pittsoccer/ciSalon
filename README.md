@@ -1,5 +1,5 @@
-# CISalon
-CIS-330 | CISalon Project
+# ciSalon
+CIS-330 | ciSalon Project
 
 # Authors
 * Bryce Pittman
