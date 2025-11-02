@@ -1,4 +1,4 @@
-# ciSalon
+# ✂️ ciSalon
 CIS-330 | ciSalon Project
 
 # Authors
