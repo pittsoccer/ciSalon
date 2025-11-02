@@ -1,8 +1,10 @@
 # ✂️ ciSalon
 CIS-330 | ciSalon Project
 
-* [General & Detailed Design](https://github.com/pittsoccer/General-and-Detailed-Design)
-* [Project Proposal](https://github.com/pittsoccer/CIS-330-Project-Proposal)
+## Original Repositories
+* Step #1 | [General & Detailed Design](https://github.com/pittsoccer/General-and-Detailed-Design)
+* Step #2 | [Project Proposal](https://github.com/pittsoccer/CIS-330-Project-Proposal)
+* Step #3 | [Salon1](https://github.com/dgoodwin-maker/Salon1)
 
 
 ## Authors
