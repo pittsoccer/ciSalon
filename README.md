@@ -1,7 +1,7 @@
 # ✂️ ciSalon
 CIS-330 | ciSalon Project
 
-# Authors
+## Authors
 * Bryce Pittman
   - [GitHub](https://github.com/pittsoccer) | [LinkedIn](https://www.linkedin.com/in/bryce-pittman/)
 * Dylan Goodwin
