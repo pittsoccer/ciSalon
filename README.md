@@ -1,2 +1,2 @@
-# Salon1
-CIS 330
+# CISalon
+CIS-330 | CISalon Project
