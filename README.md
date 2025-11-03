@@ -7,7 +7,7 @@ CIS-330 | ciSalon Project
 * Step #3 | [Salon1](https://github.com/dgoodwin-maker/Salon1)
 
 
-## Authors
+## Authors/Contributors
 * Bryce Pittman
   - [GitHub](https://github.com/pittsoccer) | [LinkedIn](https://www.linkedin.com/in/bryce-pittman/)
 * Dylan Goodwin
