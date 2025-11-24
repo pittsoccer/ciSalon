@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css" />
 
     <link rel="stylesheet" href="styles/style.css" />
-
 </head>
 
 <body style="margin:0;">
@@ -54,20 +53,91 @@
         <div class="row">
             <div class="col-12 text-center mt-4">
                 <h1>Welcome to ciSalon</h1>
-                <p>Your go-to stylists for all things creative and innovative</p>
+                <h4>Your go-to stylists for all things creative and innovative</h4>
             </div>
         </div>
-
     </div> <!-- closes container-fluid -->
+
+    <!-- HOME -->
+    <div id="home" class="screen active">
+        <h1>ciSalon</h1>
+        <button onclick="go('signin')">SIGN IN</button>
+        <button onclick="go('signup')">SIGN UP</button>
+    </div>
+
+    <!-- SIGN IN -->
+    <div id="signin" class="screen">
+        <h2>Sign In</h2>
+        <input placeholder="Username" />
+        <input placeholder="Password" type="password" />
+        <button onclick="go('dashboard')">SIGN IN</button>
+        <button onclick="go('home')">Back</button>
+    </div>
+
+    <!-- SIGN UP -->
+    <div id="signup" class="screen">
+        <h2>Sign Up</h2>
+        <input placeholder="Username" />
+        <input placeholder="Password" type="password" />
+        <button onclick="go('verify')">SIGN UP</button>
+        <button onclick="go('home')">Back</button>
+    </div>
+
+    <!-- VERIFY CODE -->
+    <div id="verify" class="screen">
+        <h2>Verify Your Code</h2>
+        <input placeholder="Enter 6-digit code" />
+        <button onclick="go('welcome')">Continue</button>
+    </div>
+
+    <!-- WELCOME -->
+    <div id="welcome" class="screen">
+        <h2>Welcome</h2>
+        <p>You have been assigned a default username and password.</p>
+        <p><strong>Username:</strong> user123</p>
+        <p><strong>Password:</strong> password</p>
+        <button onclick="go('dashboard')">Continue</button>
+    </div>
+
+    <!-- DASHBOARD -->
+    <div id="dashboard" class="screen">
+        <h2>Dashboard</h2>
+        <p><strong>Appointments</strong></p>
+        <p>Service: Hair</p>
+        <p>Date: Mar 12, 2025</p>
+        <p>Status: Scheduled</p>
+        <button onclick="go('book')">Book Appointment</button>
+        <button onclick="go('home')">Sign Out</button>
+    </div>
+
+    <!-- BOOK APPOINTMENT -->
+    <div id="book" class="screen">
+        <h2>Book an Appointment</h2>
+        <p>Available Stylists:</p>
+        <p><strong>Emma Carter</strong> – Stylist</p>
+        <button onclick="go('dashboard')">BOOK</button>
+        <button onclick="go('dashboard')">Back</button>
+    </div>
+
+    <!-- JavaScript to handle screen transitions -->
+    <script>
+        function go(id) {
+            document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+        }
+    </script>
 
     <!-- footer -->
     <footer class="text-center text-lg-start footer text-light mt-4">
         <div class="text-center p-3">
             © 2025 Bryce Pittman
             <br />
-            <a class="text-light" target="_blank" href="">wireframe</a> <!-- FIXME: add link--> |
-            <a class="text-light" target="_blank" href="https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fpittsoccer.github.io%2FciSalon%2F">check validity</a> |
-            <a class="text-light" target="_blank" href="https://wave.webaim.org/report#/https://pittsoccer.github.io/ciSalon/">check accessibility</a>
+            <a class="text-light" target="_blank" href="">wireframe</a> <!-- FIXME: add wireframe --> |
+            <a class="text-light" target="_blank"
+                href="https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fpittsoccer.github.io%2FciSalon%2F">check
+                validity</a> |
+            <a class="text-light" target="_blank"
+                href="https://wave.webaim.org/report#/https://pittsoccer.github.io/ciSalon/">check accessibility</a>
         </div>
     </footer>
 
@@ -83,6 +153,3 @@
 </body>
 
 </html>
-
-
-
