@@ -3,118 +3,171 @@
 
 /* 
 ~~~~~ Salmon Palette ~~~~~
-    Brand:    #FDBA74
-    Darkest:  #3B3732
-    Dark:     #615951
-    Mid:      #BDB0A1
-    Light:    #DBCFC0
-    Lightest: #FFFFFF
+  Brand:    #FDBA74
+  Darkest:  #3B3732
+  Dark:     #615951
+  Mid:      #BDB0A1
+  Light:    #DBCFC0
+  Lightest: #FFFFFF
 */
 
 /* google font */
 h1 {
-    font-family: "Roboto Mono", monospace;
-    font-optical-sizing: auto;
-    font-style: normal;
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 /* svg background */
 body {
-    background-image: url("../images/WoodBackgroundUpscaled.png");
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* background-position: center; */
+  background-image: url("../images/WoodBackgroundUpscaled.png");
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-/* Add a background color to the top navigation */
+/* https://www.w3schools.com/howto/howto_js_topnav.asp */
+/* Add a black background color to the top navigation */
 .topnav {
-    background-color: #3b3732;
-    overflow: hidden;
+  background-color: #3b3732;
+  overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-    float: left;
-    color: #FDBA74;
-    text-align: center;
-    border-radius: 10px;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+  float: left;
+  color: #F2F2F2;
+  text-align: center;
+  border-radius: 10px;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: #bdb0a1;
-    color: black;
+  background-color: white;
+  color: black;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-    background-color: #FDBA74;
-    color: white;
+  background-color: #FDBA74;
+  color: white;
 }
 
 body {
-    font-family: 'Roboto Mono', monospace;
-    /* color: #24b50b; */
+  margin: 0;
+  font-family: 'Roboto Mono', monospace;
+  color: #3b2f1e;
+  /* color: #24b50b; */
+}
+
+/* Style the main content */
+.screen {
+  display: none;
+  padding: 40px;
+  max-width: 500px;
+  margin: 50px auto;
+  background: #f2f2f2;
+  border: 4px solid #3b2f1e;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the active screen */
+.active {
+  display: block;
+}
+
+/* Style the form elements */
+h1,
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Style the input fields */
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #3b2f1e;
+  border-radius: 5px;
+  background: #fff;
+}
+
+/* Style the buttons */
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background: #3b2f1e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #5a442c;
 }
 
 /* Create two columns/boxes that floats next to each other */
 nav {
-    float: left;
-    width: 30%;
-    height: 300px;
-    padding: 20px;
+  float: left;
+  width: 30%;
+  height: 300px;
+  padding: 20px;
 }
 
 /* Style the list inside the menu */
 nav ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 article {
-    float: left;
-    padding: 20px;
-    width: 70%;
-    height: 300px;
-    /* only for demonstration, should be removed */
+  float: left;
+  padding: 20px;
+  width: 70%;
+  height: 300px;
+  /* only for demonstration, should be removed */
 }
 
 /* Clear floats after the columns */
 section::after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* Footer style */
 footer {
-    background-color: #3b3732;
-    color: #fff;
-    padding: 1px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
+  background-color: #3b3732;
+  color: #fff;
+  padding: 1px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
 
 /* Body Style */
 body {
-    padding-bottom: 125px;
-    /* Adjust this value to match the footer height */
+  padding-bottom: 125px;
+  /* Adjust this value to match the footer height */
 }
 
 /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
 @media (max-width: 600px) {
 
-    nav,
-    article {
-        width: 100%;
-        height: auto;
-    }
+  nav,
+  article {
+    width: 100%;
+    height: auto;
+  }
 }
