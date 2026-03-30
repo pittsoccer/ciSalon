@@ -79,15 +79,8 @@
         <h2>Sign Up</h2>
         <input placeholder="Username" />
         <input placeholder="Password" type="password" />
-        <button onclick="go('verify')">SIGN UP</button>
+        <button onclick="go('welcome')">SIGN UP</button>
         <button onclick="go('home')">Back</button>
-    </div>
-
-    <!-- VERIFY CODE -->
-    <div id="verify" class="screen">
-        <h2>Verify Your Code</h2>
-        <input placeholder="Enter 6-digit code" />
-        <button onclick="go('welcome')">Continue</button>
     </div>
 
     <!-- WELCOME -->
@@ -96,7 +89,8 @@
         <p>You have been assigned a default username and password.</p>
         <p><strong>Username:</strong> user123</p>
         <p><strong>Password:</strong> password</p>
-        <button onclick="go('dashboard')">Continue</button>
+        <p>Please sign in again</p>
+        <button onclick="go('signin')">Sign In</button>
     </div>
 
     <!-- DASHBOARD -->
@@ -104,8 +98,8 @@
         <h2>Dashboard</h2>
         <p><strong>Appointments</strong></p>
         <p>Service: Hair</p>
-        <p>Date: Mar 12, 2025</p>
-        <p>Status: Scheduled</p>
+        <p><strong>Date:</strong></p>
+            <input type="date" class="form-control" id="appointmentDate" required />
         <button onclick="go('book')">Book Appointment</button>
         <button onclick="go('home')">Sign Out</button>
     </div>
@@ -115,8 +109,14 @@
         <h2>Book an Appointment</h2>
         <p>Available Stylists:</p>
         <p><strong>Emma Carter</strong> – Stylist</p>
-        <button onclick="go('dashboard')">BOOK</button>
+        <button onclick="go('final')">BOOK</button>
         <button onclick="go('dashboard')">Back</button>
+    </div>
+
+    <!-- CONFIRMATION -->
+    <div id="final" class="screen">
+        <h2>Appointment Scheduled!</h2>
+        <button onclick="go('home')">OK</button>
     </div>
 
     <!-- JavaScript to handle screen transitions -->
@@ -130,7 +130,7 @@
     <!-- footer -->
     <footer class="text-center text-lg-start footer text-light mt-4">
         <div class="text-center p-3">
-            © 2025 Bryce Pittman
+            © 2026 Bryce Pittman
             <br />
             <a class="text-light" target="_blank" href="">wireframe</a> <!-- FIXME: add wireframe --> |
             <a class="text-light" target="_blank"
